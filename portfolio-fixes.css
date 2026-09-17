@@ -217,6 +217,8 @@ section[id]{scroll-margin-top:84px}
 .chart-editor-preview{
   display:block;
   width:100%;
+  height:auto;
+  object-fit:contain;
   aspect-ratio:1592/1004;
   min-height:0;
   border-radius:8px;
