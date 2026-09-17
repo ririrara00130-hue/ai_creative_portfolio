@@ -254,12 +254,15 @@ section[id]{scroll-margin-top:84px}
   border-radius:12px;
   background:linear-gradient(145deg,rgba(57,230,255,.025),rgba(255,255,255,.012));
 }
-.chart-editor-showcase>img{
+.chart-editor-preview{
   display:block;
   width:100%;
+  aspect-ratio:1592/1004;
+  min-height:0;
   border-radius:8px;
   border:1px solid var(--line);
   background:#050609;
+  overflow:hidden;
 }
 .chart-editor-copy>span{
   color:var(--pink);
