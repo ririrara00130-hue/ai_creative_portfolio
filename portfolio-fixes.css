@@ -1,4 +1,5 @@
 /* Final presentation refinements */
+section[id]{scroll-margin-top:84px}
 .hero.section{
   width:min(1160px,calc(100% - 40px));
   min-height:auto;
@@ -58,6 +59,46 @@
   padding:11px 6px 2px;
   font-size:10.5px;
 }
+.process-card{
+  align-items:stretch;
+}
+.process-visual{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  padding:12px;
+  align-content:center;
+  background:#05070a;
+}
+.process-visual figure{
+  margin:0;
+  position:relative;
+  overflow:hidden;
+  border-radius:8px;
+  border:1px solid var(--line);
+  background:#000;
+}
+.process-visual img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:250px;
+  aspect-ratio:16/10;
+  object-fit:cover;
+}
+.process-visual figcaption{
+  position:absolute;
+  left:8px;
+  bottom:8px;
+  padding:5px 8px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(4,6,10,.78);
+  backdrop-filter:blur(8px);
+  color:#dce4ee;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
 .other-works{
   grid-template-columns:1fr;
   gap:18px;
@@ -87,6 +128,57 @@
   font-size:14px;
   line-height:1.85;
 }
+.web-work{
+  min-height:0;
+  grid-template-columns:1.14fr .86fr;
+  gap:28px;
+  padding:28px 30px;
+  border-color:rgba(255,255,255,.10);
+  background:
+    radial-gradient(circle at 80% 48%,rgba(255,59,167,.065),transparent 34%),
+    linear-gradient(145deg,rgba(255,255,255,.026),rgba(255,255,255,.01));
+}
+.web-work-copy h3{
+  font-size:clamp(32px,3.6vw,48px);
+}
+.phone-stage{
+  min-height:510px;
+  padding:0;
+}
+.phone-stage:before{
+  width:300px;
+  height:300px;
+  opacity:.75;
+}
+.phone-shell{
+  width:230px;
+  height:488px;
+  padding:10px 8px 12px;
+  border-radius:35px;
+}
+.phone-shell:before{
+  inset:4px;
+  border-radius:31px;
+}
+.phone-top{
+  top:13px;
+  width:82px;
+  height:21px;
+}
+.phone-speaker{width:37px}
+.phone-screen{border-radius:28px}
+.phone-screen iframe{
+  width:390px;
+  height:844px;
+  transform:scale(.548);
+}
+.phone-homebar{
+  width:76px;
+  bottom:8px;
+}
+.phone-side-a{top:88px;height:30px}
+.phone-side-b{top:134px;height:50px}
+.phone-side-c{top:198px;height:50px}
 .project-caption{
   margin:12px 2px 0;
   color:#7f8a98;
@@ -112,6 +204,33 @@
   margin-top:14px;
 }
 @media(max-width:900px){
+  section[id]{scroll-margin-top:118px}
+  .topbar{
+    height:auto;
+    min-height:82px;
+    padding:9px 14px 8px;
+    gap:7px;
+    flex-wrap:wrap;
+    align-content:center;
+  }
+  .brand{
+    flex:0 0 100%;
+  }
+  .topbar nav{
+    display:flex !important;
+    width:100%;
+    gap:18px;
+    overflow-x:auto;
+    white-space:nowrap;
+    padding:0 0 2px;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+  .topbar nav::-webkit-scrollbar{display:none}
+  .topbar nav a{
+    flex:0 0 auto;
+    font-size:10px;
+  }
   .hero.section{
     width:min(100% - 28px,1040px);
     padding-top:42px;
@@ -136,8 +255,23 @@
     grid-template-columns:1fr;
     gap:18px;
   }
+  .web-work{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:24px;
+  }
+  .phone-stage{
+    min-height:500px;
+  }
 }
 @media(max-width:560px){
+  section[id]{scroll-margin-top:112px}
+  .topbar{
+    padding-left:13px;
+    padding-right:13px;
+  }
+  .brand{font-size:10.5px}
+  .topbar nav{gap:15px}
   .hero.section{
     width:calc(100% - 18px);
     gap:20px;
@@ -148,7 +282,8 @@
     width:calc(100% - 8px);
   }
   .hero-copy h1{
-    font-size:40px;
+    font-size:36px;
+    line-height:1.08;
   }
   .hero-copy .lead{
     font-size:13px;
@@ -163,6 +298,34 @@
     flex-direction:column;
     gap:3px;
     padding:10px 4px 1px;
+  }
+  .process-visual{
+    grid-template-columns:1fr;
+    padding:9px;
+  }
+  .process-visual img{
+    min-height:0;
+    aspect-ratio:16/9;
+  }
+  .web-work{
+    padding:18px 14px;
+  }
+  .web-work-copy h3{
+    font-size:34px;
+  }
+  .phone-stage{
+    min-height:475px;
+  }
+  .phone-shell{
+    width:220px;
+    height:465px;
+    border-radius:34px;
+  }
+  .phone-screen{border-radius:27px}
+  .phone-screen iframe{transform:scale(.522)}
+  .phone-stage:before{
+    width:270px;
+    height:270px;
   }
   .small-work{
     padding:14px;
