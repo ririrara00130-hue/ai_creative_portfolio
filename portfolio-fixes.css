@@ -199,46 +199,6 @@ section[id]{scroll-margin-top:84px}
   padding:0 12px;
   font-size:11px;
 }
-.phone-stage{
-  min-height:365px;
-  padding:0;
-}
-.phone-stage:before{
-  width:240px;
-  height:240px;
-  opacity:.68;
-}
-.phone-shell{
-  width:172px;
-  height:365px;
-  padding:8px 7px 10px;
-  border-radius:29px;
-}
-.phone-shell:before{
-  inset:4px;
-  border-radius:25px;
-}
-.phone-top{
-  top:11px;
-  width:66px;
-  height:18px;
-}
-.phone-speaker{width:30px;height:4px}
-.phone-camera{width:6px;height:6px}
-.phone-screen{border-radius:23px}
-.phone-screen iframe{
-  width:390px;
-  height:844px;
-  transform:scale(.40);
-}
-.phone-homebar{
-  width:60px;
-  height:3px;
-  bottom:7px;
-}
-.phone-side-a{top:68px;height:24px}
-.phone-side-b{top:105px;height:40px}
-.phone-side-c{top:156px;height:40px}
 .phone-caption{
   margin-top:10px;
   font-size:9px;
