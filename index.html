@@ -14,7 +14,7 @@
 <body>
 <header class="topbar">
   <a class="brand" href="#top">AI CREATIVE PORTFOLIO</a>
-  <nav>
+  <nav aria-label="ページ内ナビゲーション">
     <a href="#works">WORKS</a>
     <a href="#aim">AIM//ERROR</a>
     <a href="#qa">QA</a>
@@ -26,7 +26,7 @@
   <section class="hero section">
     <div class="hero-copy">
       <p class="eyebrow">AI CREATIVE PORTFOLIO</p>
-      <h1>AIでつくる。<br>映像・UI・Web。</h1>
+      <h1>生成AIを、<br>作品に落とし込む。</h1>
       <p class="lead">個人で制作しているゲーム「AIM//ERROR」を中心に、生成AIを使ったキャラクター映像、ループアニメーション、ゲーム内MV、UI素材、Webサービス、Suno AIを使ったゲーム内楽曲などを制作しています。生成して終わりではなく、実際に使える形まで調整・検証することを大切にしています。</p>
       <div class="hero-tags">
         <span>AI VIDEO</span><span>AI MUSIC</span><span>UI</span><span>WEB</span><span>UE5</span><span>QA / ITERATION</span>
@@ -48,14 +48,21 @@
     </div>
 
     <div class="media-grid">
-      <article class="media-card wide">
-        <video autoplay muted loop playsinline controls>
-          <source src="assets/title-transition.mp4" type="video/mp4">
-        </video>
+      <article class="media-card wide process-card">
+        <div class="process-visual" aria-label="AI映像制作の元画像と実装画面">
+          <figure>
+            <img src="assets/aim-title.jpg" alt="AIM//ERROR タイトル画面">
+            <figcaption>BASE VISUAL</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/aim-lobby.jpg" alt="AIM//ERROR ゲーム画面">
+            <figcaption>IN-GAME</figcaption>
+          </figure>
+        </div>
         <div class="media-copy">
-          <span>AI VIDEO / TRANSITION</span>
-          <h3>タイトル → ゲームへの画面遷移</h3>
-          <p>元のキャラクター、ロゴ、世界観をなるべく崩さず、HUDの起動やグリッチ、画面の崩壊表現を組み合わせて制作。違和感や生成崩れを確認しながら何度も調整しました。</p>
+          <span>AI VIDEO / PROCESS</span>
+          <h3>生成から実装まで、使える映像に仕上げる</h3>
+          <p>静止画の世界観を基準に、動かしたい要素と崩したくない要素を整理してAI映像を制作しています。顔や衣装、ロゴ、背景の崩れや不要物を確認し、条件を変えながら再生成。完成した素材は実際のゲームへ組み込み、画面遷移として自然に使えるところまで調整・確認しています。</p>
         </div>
       </article>
 
@@ -105,7 +112,7 @@
 
     <article class="web-work">
       <div class="web-work-copy">
-        <span class="work-kicker">AI-BUILT WEB SERVICE</span>
+        <span class="work-kicker">AI CODING / WEB</span>
         <h3>「配信OK？」</h3>
         <p class="web-sub">ゲーム配信・実況ガイドライン検索サイト</p>
         <p>ゲームごとの配信・実況ルールを探しやすくするために制作したWebサービスです。UI案、HTML/CSS/JavaScript、Cloudflare Workers側の実装、修正やデバッグまで、制作工程のほぼ全体で生成AIを活用して形にしました。</p>
