@@ -28,18 +28,29 @@
   font-size:14px;
   line-height:1.85;
 }
+.project-caption{
+  margin:12px 2px 0;
+  color:#7f8a98;
+  font-size:11px;
+  line-height:1.7;
+  letter-spacing:.01em;
+}
 .about-line{
   padding-top:44px;
   padding-bottom:44px;
+  border-top:1px solid var(--line);
 }
 .about-line p{
-  max-width:900px;
+  max-width:980px;
   margin:0;
   color:#c4ccd6;
   font-size:15px;
   font-weight:400;
   line-height:1.95;
   letter-spacing:0;
+}
+.about-line p + p{
+  margin-top:14px;
 }
 @media(max-width:900px){
   .small-work{
@@ -53,6 +64,10 @@
   }
   .small-work h3{
     font-size:23px;
+  }
+  .project-caption{
+    font-size:10px;
+    line-height:1.65;
   }
   .about-line p{
     font-size:14px;
