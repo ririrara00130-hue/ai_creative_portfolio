@@ -1,19 +1,19 @@
 /* Final presentation refinements */
 .hero.section{
-  width:min(1240px,calc(100% - 40px));
+  width:min(1160px,calc(100% - 40px));
   min-height:auto;
   display:flex;
   flex-direction:column;
-  gap:26px;
-  padding-top:52px;
-  padding-bottom:82px;
+  gap:24px;
+  padding-top:50px;
+  padding-bottom:78px;
 }
 .hero-copy{
-  width:min(1120px,100%);
+  width:min(1040px,100%);
   margin:0 auto;
   display:grid;
   grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
-  column-gap:48px;
+  column-gap:44px;
   align-items:end;
 }
 .hero-copy .eyebrow{
@@ -23,14 +23,14 @@
 .hero-copy h1{
   grid-column:1;
   grid-row:2/4;
-  font-size:clamp(40px,4.4vw,62px);
+  font-size:clamp(38px,4.1vw,58px);
   line-height:1.04;
-  max-width:580px;
+  max-width:540px;
 }
 .hero-copy .lead{
   grid-column:2;
   grid-row:2;
-  margin:0 0 18px;
+  margin:0 0 16px;
   max-width:none;
   font-size:14px;
   line-height:1.9;
@@ -42,21 +42,21 @@
 }
 .hero-showcase{
   width:100%;
-  max-width:1120px;
+  max-width:980px;
   margin:0 auto;
-  padding:10px;
-  border-radius:14px;
-  box-shadow:0 32px 90px rgba(0,0,0,.44),0 0 55px rgba(255,59,167,.05);
+  padding:9px;
+  border-radius:13px;
+  box-shadow:0 28px 76px rgba(0,0,0,.42),0 0 45px rgba(255,59,167,.045);
 }
 .hero-showcase video{
   width:100%;
   aspect-ratio:16/9;
   object-fit:cover;
-  border-radius:9px;
+  border-radius:8px;
 }
 .showcase-note{
-  padding:12px 6px 2px;
-  font-size:11px;
+  padding:11px 6px 2px;
+  font-size:10.5px;
 }
 .other-works{
   grid-template-columns:1fr;
@@ -113,21 +113,24 @@
 }
 @media(max-width:900px){
   .hero.section{
-    width:min(100% - 28px,1120px);
+    width:min(100% - 28px,1040px);
     padding-top:42px;
-    padding-bottom:68px;
+    padding-bottom:64px;
   }
   .hero-copy{
     display:block;
   }
   .hero-copy h1{
-    font-size:clamp(40px,8vw,56px);
+    font-size:clamp(38px,8vw,54px);
   }
   .hero-copy .lead{
     margin-top:20px;
   }
   .hero-copy .hero-tags{
     margin-top:22px;
+  }
+  .hero-showcase{
+    max-width:900px;
   }
   .small-work{
     grid-template-columns:1fr;
@@ -145,13 +148,14 @@
     width:calc(100% - 8px);
   }
   .hero-copy h1{
-    font-size:42px;
+    font-size:40px;
   }
   .hero-copy .lead{
     font-size:13px;
     line-height:1.85;
   }
   .hero-showcase{
+    width:calc(100% - 10px);
     padding:7px;
     border-radius:12px;
   }
