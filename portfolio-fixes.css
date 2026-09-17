@@ -1,0 +1,61 @@
+/* Final presentation refinements */
+.other-works{
+  grid-template-columns:1fr;
+  gap:18px;
+}
+.small-work{
+  display:grid;
+  grid-template-columns:minmax(420px,1.15fr) .85fr;
+  gap:28px;
+  align-items:center;
+  padding:20px;
+}
+.small-work img,
+.small-work:first-child img{
+  width:100%;
+  height:auto;
+  max-height:none;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center;
+  background:#06080b;
+}
+.small-work h3{
+  font-size:26px;
+  margin:8px 0 10px;
+}
+.small-work p{
+  font-size:14px;
+  line-height:1.85;
+}
+.about-line{
+  padding-top:44px;
+  padding-bottom:44px;
+}
+.about-line p{
+  max-width:900px;
+  margin:0;
+  color:#c4ccd6;
+  font-size:15px;
+  font-weight:400;
+  line-height:1.95;
+  letter-spacing:0;
+}
+@media(max-width:900px){
+  .small-work{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+}
+@media(max-width:560px){
+  .small-work{
+    padding:14px;
+  }
+  .small-work h3{
+    font-size:23px;
+  }
+  .about-line p{
+    font-size:14px;
+    line-height:1.9;
+  }
+}
