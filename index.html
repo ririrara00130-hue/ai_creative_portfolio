@@ -3,38 +3,195 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AIM//ERRORを中心に、生成AIを使った映像・UI制作、UE5ゲーム制作、QA・改善経験をまとめたポートフォリオ。" />
-  <title>AIM//ERROR — Creative Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="生成AIを使った映像・UI・キャラクター制作、UE5ゲーム制作、QA・改善経験をまとめたクリエイティブポートフォリオ。" />
+  <title>AI Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div class="noise"></div>
-<header class="topbar"><a class="brand" href="#top">PORTFOLIO<span>//</span>AIM ERROR</a><nav><a href="#aim">AIM//ERROR</a><a href="#aiworks">AI WORKS</a><a href="#qa">QA</a><a href="#skills">SKILLS</a></nav></header>
+<header class="topbar">
+  <a class="brand" href="#top">AI CREATIVE PORTFOLIO</a>
+  <nav>
+    <a href="#works">WORKS</a>
+    <a href="#aim">AIM//ERROR</a>
+    <a href="#qa">QA</a>
+    <a href="#skills">SKILLS</a>
+  </nav>
+</header>
+
 <main id="top">
-<section class="hero section">
-  <div class="hero-copy"><p class="eyebrow">RHYTHM GAME × AIM TRAINER</p><img class="main-logo" src="assets/aim-error-logo.png" alt="AIM//ERROR"><h1>音楽に合わせて、<br><em>狙って撃つ。</em></h1><p class="lead">Unreal Engine 5で個人制作している、FPSのエイム操作と音楽ゲームを組み合わせた3Dリズムゲームです。企画・ゲームデザイン・UE5実装に加え、生成AIを使ったキャラクター映像、MV、画面遷移、UI素材の制作と検証まで行っています。</p><div class="hero-actions"><a class="btn primary" href="#aim">ゲームを見る</a><a class="btn ghost" href="#qa">QA・改善を見る</a></div><div class="stats"><div><strong>UE5</strong><span>Blueprint中心</span></div><div><strong>音ゲー × FPS</strong><span>Aim Trainer</span></div><div><strong>生成AI</strong><span>映像 / UI / 制作補助</span></div></div></div>
-  <div class="hero-visual"><img src="assets/aim-title.jpg" alt="AIM//ERROR タイトル画面"><div class="hero-card"><span>PERSONAL PROJECT</span><strong>AIM//ERROR</strong><small>Rhythm Game × Aim Trainer</small></div></div>
-</section>
+  <section class="hero section">
+    <div class="hero-copy">
+      <p class="eyebrow">AI CREATIVE PORTFOLIO</p>
+      <h1>生成AIを使った、<br>映像・UI・ゲーム制作。</h1>
+      <p class="lead">個人で制作しているゲーム「AIM//ERROR」を中心に、生成AIを使ったキャラクター映像、ループアニメーション、ゲーム内MV、UI素材などを制作しています。生成して終わりではなく、実際に使える形まで調整・検証することを大切にしています。</p>
+      <div class="hero-tags">
+        <span>AI VIDEO</span><span>UI</span><span>UE5</span><span>QA / ITERATION</span>
+      </div>
+    </div>
+    <div class="hero-showcase">
+      <video autoplay muted loop playsinline poster="assets/aim-title.jpg">
+        <source src="assets/title-transition.mp4" type="video/mp4">
+      </video>
+      <div class="showcase-note"><b>AI VIDEO</b><span>タイトル画面 → ゲーム画面トランジション</span></div>
+    </div>
+  </section>
 
-<section id="aim" class="section"><div class="section-head"><p class="eyebrow">AIM//ERROR</p><h2>ゲーム制作と生成AIを、ひとつの作品に。</h2><p>プレイヤーは楽曲に同期して出現するTAP・FLICK・HOLDなどのターゲットをマウスで処理します。音ゲーの譜面を「FPSのエイム操作」に置き換えたゲームとして制作しています。</p></div>
-<article class="project featured-project"><div class="project-media video-wrap"><video autoplay muted loop playsinline controls poster="assets/aim-title.jpg"><source src="assets/aim-error-portfolio.mp4" type="video/mp4"></video></div><div class="project-copy"><div class="project-title-row"><h3>AIM//ERROR</h3><span class="status">IN DEVELOPMENT</span></div><p class="project-sub">Rhythm Game × FPS Aim Trainer / Unreal Engine 5</p><p>ゲーム本体はUnreal Engine 5で制作し、Blueprintを中心にノーツ、入力、判定、HUDなどを実装。生成AIはゲームそのものを置き換えるのではなく、映像演出や素材制作、実装補助、検証と改善に活用しています。</p><div class="work-grid"><div><b>GAME</b><span>音ゲー × Aim Trainer</span></div><div><b>ENGINE</b><span>Unreal Engine 5 / Blueprint</span></div><div><b>AI VIDEO</b><span>キャラクター / MV / ループ / 遷移</span></div><div><b>AI DESIGN</b><span>UIパーツ / ビジュアル案</span></div><div><b>QA</b><span>生成崩れ・挙動・実装を反復検証</span></div><div><b>EDIT</b><span>AviUtl / Premiere Pro / After Effects</span></div></div></div></article>
-</section>
+  <section id="works" class="section">
+    <div class="section-head">
+      <p class="eyebrow">GENERATIVE AI WORKS</p>
+      <h2>生成AIを使った制作</h2>
+      <p>映像・UI・キャラクター表現など、実際のゲーム制作で使うことを前提に試作と調整を行っています。</p>
+    </div>
 
-<section id="aiworks" class="section"><div class="section-head"><p class="eyebrow">GENERATIVE AI WORKS</p><h2>ゲーム内で使う映像・UIも制作。</h2><p>静止画を生成して終わりではなく、実際のゲーム画面に入れたときに成立するところまで調整しています。</p></div>
-<div class="media-grid">
-<article class="media-card wide"><video autoplay muted loop playsinline controls><source src="assets/title-transition.mp4" type="video/mp4"></video><div class="media-copy"><span>AI VIDEO / TRANSITION</span><h3>タイトル → ゲームへの画面遷移</h3><p>キャラクター、ロゴ、世界観を維持しながら、HUD起動・グリッチ・画面変化を組み合わせたトランジション。生成結果の崩れや不要物を確認し、指示と生成条件を変えながら調整しました。</p></div></article>
-<article class="media-card"><video autoplay muted loop playsinline controls><source src="assets/song-select-loop.mp4" type="video/mp4"></video><div class="media-copy"><span>AI VIDEO / LOOP</span><h3>曲選択画面ループ</h3><p>メニューで常時再生できることを前提に、キャラクターや背景に動きを付けつつ、繰り返しても違和感が出にくいループ映像として制作。</p></div></article>
-<article class="media-card"><video autoplay muted loop playsinline controls><source src="assets/sugar-crash.mp4" type="video/mp4"></video><div class="media-copy"><span>AI VIDEO / MV</span><h3>ゲーム内MV「SUGAR CRASH」</h3><p>複数の生成ループ素材をつなぎ、ゲームの大型スクリーンに流すMVとして編集。楽曲中に同じ画が続かないよう、映像の切り替えや見せ方も調整しています。</p></div></article>
-</div>
-<div class="edit-proof"><img src="assets/mv-edit-screen.png" alt="AviUtlでMVを編集している画面"><div><p class="eyebrow">EDITING</p><h3>生成素材を、使える映像に仕上げる。</h3><p>AIで生成した短い素材をそのまま並べるだけではなく、AviUtlなどで映像を構成し、ゲーム内スクリーン向けのMVとして編集しています。</p></div></div>
-<div class="ui-showcase"><div class="ui-copy"><p class="eyebrow">AI ASSISTED UI DESIGN</p><h3>UIパーツ制作にも生成AIを活用</h3><p>ゲームの方向性に合わせたUI案を生成AIで作り、必要な状態や用途に合わせて素材化しています。生成結果をそのまま採用せず、ゲーム全体のデザインと合うかを見ながら選別・調整しています。</p></div><div class="ui-images"><img src="assets/ui-generated-01.png" alt="生成AIを活用したAIM//ERROR UIパーツ"><img src="assets/ui-generated-02.png" alt="生成AIを活用したENTER LOBBY UIパーツ"></div></div>
-</section>
+    <div class="media-grid">
+      <article class="media-card wide">
+        <video autoplay muted loop playsinline controls>
+          <source src="assets/title-transition.mp4" type="video/mp4">
+        </video>
+        <div class="media-copy">
+          <span>AI VIDEO / TRANSITION</span>
+          <h3>タイトル → ゲームへの画面遷移</h3>
+          <p>元のキャラクター、ロゴ、世界観をなるべく崩さず、HUDの起動やグリッチ、画面の崩壊表現を組み合わせて制作。違和感や生成崩れを確認しながら何度も調整しました。</p>
+        </div>
+      </article>
 
-<section id="qa" class="section qa-section"><div class="section-head"><p class="eyebrow">QUALITY / ITERATION</p><h2>作る → 見つける → 直す、を繰り返す。</h2><p>企業でのQA実務経験ではありませんが、個人制作では「まず動かし、問題を再現し、原因を切り分けて修正し、もう一度確認する」工程をかなり重視しています。</p></div><div class="qa-flow"><div class="qa-card"><span>01</span><b>狙いを決める</b><p>見た目・動き・ゲーム上の条件を決める</p></div><div class="qa-card"><span>02</span><b>制作・実装</b><p>AI生成 / UE5 / Blueprintで形にする</p></div><div class="qa-card"><span>03</span><b>違和感を探す</b><p>崩れ・不要物・不具合・操作感を確認</p></div><div class="qa-card"><span>04</span><b>原因を切り分ける</b><p>一度に全部変えず、条件を変えて比較</p></div><div class="qa-card"><span>05</span><b>再検証</b><p>修正後に同じ条件で確認して詰める</p></div></div><div class="qa-examples"><div><b>AI映像</b><p>顔・衣装の崩れ / 元画像との差 / 不要物 / 不自然な動き / ループ接続</p></div><div><b>ゲーム</b><p>ノーツ挙動 / 入力 / 判定 / UI / カメラ / スポーン / 再現性</p></div><div><b>改善の進め方</b><p>問題を言語化 → 仮説 → 条件を変更 → 比較 → 採用 / やり直し</p></div></div></section>
+      <article class="media-card">
+        <video autoplay muted loop playsinline controls>
+          <source src="assets/song-select-loop.mp4" type="video/mp4">
+        </video>
+        <div class="media-copy">
+          <span>AI VIDEO / LOOP</span>
+          <h3>曲選択画面ループ</h3>
+          <p>メニューで繰り返し再生することを前提に、キャラクターや背景に動きを付けつつ、ループ時の違和感が出にくいよう調整しています。</p>
+        </div>
+      </article>
 
-<section id="skills" class="section"><div class="section-head"><p class="eyebrow">TOOLS & SKILLS</p><h2>使用ツール</h2></div><div class="skills-grid"><div class="skill"><strong>DomoAI / 生成AI</strong><span>AI動画 / キャラクター映像 / ループ / トランジション</span></div><div class="skill"><strong>Unreal Engine 5</strong><span>ゲーム制作 / Blueprint / UI / 検証</span></div><div class="skill"><strong>AviUtl</strong><span>MV・映像編集</span></div><div class="skill"><strong>Adobe Premiere Pro</strong><span>動画編集</span></div><div class="skill"><strong>Adobe After Effects</strong><span>映像・エフェクト制作</span></div><div class="skill"><strong>Photoshop</strong><span>画像編集 / グラフィック制作</span></div><div class="skill"><strong>Live2D</strong><span>キャラクター制作で使用経験あり</span></div><div class="skill"><strong>Illustration</strong><span>イラスト制作</span></div><div class="skill"><strong>AI Coding</strong><span>実装補助 / 不具合調査 / 試作・改善</span></div></div><div class="learning"><span>LEARNING</span><p><b>ComfyUI / Stable Diffusion</b> — キャラクター一貫性や画像・動画生成ワークフローへの活用を学習中。</p></div></section>
+      <article class="media-card">
+        <video autoplay muted loop playsinline controls>
+          <source src="assets/sugar-crash.mp4" type="video/mp4">
+        </video>
+        <div class="media-copy">
+          <span>AI VIDEO / MV</span>
+          <h3>ゲーム内MV「SUGAR CRASH」</h3>
+          <p>複数の生成ループ素材をつなぎ、ゲーム内の大型スクリーンに流す映像として編集。カットの切り替えやテンポも含めて仕上げています。</p>
+        </div>
+      </article>
+    </div>
 
-<section class="section about"><div><p class="eyebrow">ABOUT</p><h2>最近、生成AIを制作に取り入れ始めました。</h2></div><p>アニメ・ゲーム・キャラクターなどのサブカルチャーが好きで、イラストやLive2Dにも触れてきました。最近は生成AIを個人ゲーム制作に取り入れ、映像やUIを実際に使える形まで試行錯誤しています。新しいツールを触り、うまくいかない理由を探しながら少しずつ完成度を上げていく作業が好きです。</p></section>
-</main><footer><span>AIM//ERROR — CREATIVE PORTFOLIO</span><span>© 2026</span></footer><script src="script.js"></script></body></html>
+    <div class="ui-showcase">
+      <div class="ui-copy">
+        <p class="eyebrow">AI ASSISTED UI DESIGN</p>
+        <h3>UIパーツ制作にも生成AIを活用</h3>
+        <p>ゲーム全体のデザインに合う方向を探しながらUI案を生成し、用途ごとに選別・調整して素材化しています。</p>
+      </div>
+      <div class="ui-images">
+        <img src="assets/ui-generated-01.png" alt="生成AIを活用したAIM//ERROR UIパーツ">
+        <img src="assets/ui-generated-02.png" alt="生成AIを活用したENTER LOBBY UIパーツ">
+      </div>
+    </div>
+
+    <div class="edit-proof">
+      <img src="assets/mv-edit-screen.png" alt="AviUtlでMVを編集している画面">
+      <div>
+        <p class="eyebrow">EDITING</p>
+        <h3>生成素材を、使える映像に仕上げる</h3>
+        <p>AIで作った短い素材をそのまま並べるのではなく、AviUtlなどで構成し、ゲーム内で使えるMVや映像として仕上げています。</p>
+      </div>
+    </div>
+
+    <div class="other-works">
+      <article class="small-work">
+        <img src="assets/character-design.jpg" alt="AIM//ERROR キャラクターデザインシート">
+        <div>
+          <span>CHARACTER / DESIGN SHEET</span>
+          <h3>キャラクター設定画</h3>
+          <p>キャラクターの三面図・表情・衣装ディテールなどをまとめた設定画も制作しています。</p>
+        </div>
+      </article>
+      <article class="small-work">
+        <img src="assets/flyer-photoshop.jpg" alt="Photoshopで制作したフライヤー">
+        <div>
+          <span>PHOTOSHOP / FLYER</span>
+          <h3>AIを使わないデザイン制作</h3>
+          <p>生成AIを使わず、Photoshopでフライヤーを制作した経験もあります。レイアウト、文字組み、画像配置などの基本的なデザイン作業に対応できます。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="aim" class="section project-section">
+    <div class="section-head compact-head">
+      <p class="eyebrow">PROJECT / AIM//ERROR</p>
+      <h2>AIM//ERRORについて</h2>
+    </div>
+    <article class="project-card">
+      <div class="project-media">
+        <video autoplay muted loop playsinline controls poster="assets/aim-title.jpg">
+          <source src="assets/aim-error-portfolio.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="project-copy">
+        <img class="project-logo" src="assets/aim-error-logo.png" alt="AIM//ERROR">
+        <p class="project-sub">Rhythm Game × FPS Aim Trainer / Unreal Engine 5</p>
+        <p>Unreal Engine 5で個人制作している3Dリズムゲームです。音楽に合わせて出現するターゲットをマウスで処理し、音ゲーの譜面をFPSのエイム操作に置き換えたゲームとして制作しています。</p>
+        <p>Blueprintを中心にノーツ、入力、判定、HUDなどを実装し、生成AIはキャラクター映像、MV、画面遷移、UI素材の制作や実装補助、検証・改善に活用しています。</p>
+        <div class="work-grid">
+          <div><b>GAME</b><span>音ゲー × Aim Trainer</span></div>
+          <div><b>ENGINE</b><span>Unreal Engine 5 / Blueprint</span></div>
+          <div><b>AI VIDEO</b><span>MV / ループ / トランジション</span></div>
+          <div><b>AI DESIGN</b><span>UI / キャラクター素材</span></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="qa" class="section qa-section">
+    <div class="section-head">
+      <p class="eyebrow">QUALITY / ITERATION</p>
+      <h2>QA・検証・改善</h2>
+      <p>制作だけでなく、違和感や不具合を見つけて原因を切り分け、修正してもう一度確認する工程を重視しています。</p>
+    </div>
+    <div class="qa-flow">
+      <div class="qa-card"><span>01</span><b>狙いを決める</b><p>見た目・動き・ゲーム上の条件を整理</p></div>
+      <div class="qa-card"><span>02</span><b>制作・実装</b><p>AI生成 / UE5 / Blueprintで形にする</p></div>
+      <div class="qa-card"><span>03</span><b>問題を見つける</b><p>崩れ・不要物・不具合・操作感を確認</p></div>
+      <div class="qa-card"><span>04</span><b>原因を切り分ける</b><p>条件を一つずつ変えて比較する</p></div>
+      <div class="qa-card"><span>05</span><b>再検証</b><p>修正後に同じ条件で確認して詰める</p></div>
+    </div>
+    <div class="qa-examples">
+      <div><b>AI映像</b><p>顔・衣装の崩れ / 元画像との差 / 不要物 / 不自然な動き / ループ接続</p></div>
+      <div><b>ゲーム</b><p>ノーツ挙動 / 入力 / 判定 / UI / カメラ / スポーン / 再現性</p></div>
+      <div><b>改善の進め方</b><p>問題を言語化 → 仮説 → 条件変更 → 比較 → 採用または再調整</p></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-head">
+      <p class="eyebrow">TOOLS & SKILLS</p>
+      <h2>使用ツール</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill"><strong>DomoAI / 生成AI</strong><span>AI動画 / キャラクター映像 / ループ / トランジション</span></div>
+      <div class="skill"><strong>Unreal Engine 5</strong><span>ゲーム制作 / Blueprint / UI / 検証</span></div>
+      <div class="skill"><strong>AviUtl</strong><span>MV・映像編集</span></div>
+      <div class="skill"><strong>Adobe Premiere Pro</strong><span>動画編集</span></div>
+      <div class="skill"><strong>Adobe After Effects</strong><span>映像・エフェクト制作</span></div>
+      <div class="skill"><strong>Adobe Photoshop</strong><span>画像編集 / フライヤー / グラフィック制作</span></div>
+      <div class="skill"><strong>Live2D</strong><span>キャラクター制作で使用経験あり</span></div>
+      <div class="skill"><strong>Illustration</strong><span>イラスト制作</span></div>
+      <div class="skill"><strong>AI Coding</strong><span>実装補助 / 不具合調査 / 試作・改善</span></div>
+    </div>
+    <div class="learning"><span>LEARNING</span><p><b>ComfyUI / Stable Diffusion</b> — キャラクター一貫性や画像・動画生成ワークフローへの活用を学習中です。</p></div>
+  </section>
+
+  <section class="about-line section">
+    <p>生成AIを使った制作に挑戦しながら、試作・検証・改善を繰り返しています。</p>
+  </section>
+</main>
+
+<footer><span>AI CREATIVE PORTFOLIO</span><span>2026</span></footer>
+</body>
+</html>
