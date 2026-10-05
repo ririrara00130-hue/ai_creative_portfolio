@@ -446,3 +446,77 @@ section[id]{scroll-margin-top:84px}
     line-height:1.9;
   }
 }
+
+/* R.E.C.A.L.L. project */
+.project-media img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  border-radius:8px;
+  background:#000;
+  border:1px solid var(--line);
+}
+.recall-card{
+  background:linear-gradient(150deg,rgba(57,230,255,.03),rgba(255,255,255,.015));
+}
+.recall-wordmark{
+  margin:0 0 10px;
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:14px;
+  font-family:"Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif;
+  font-size:clamp(30px,3.4vw,44px);
+  font-weight:500;
+  letter-spacing:.2em;
+  line-height:1.2;
+  color:#eef1f5;
+}
+.recall-wordmark small{
+  font-family:Inter,"Noto Sans JP",sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.2em;
+  color:var(--muted);
+}
+.recall-gallery{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+.recall-gallery figure{
+  margin:0;
+  position:relative;
+  overflow:hidden;
+  border-radius:8px;
+  border:1px solid var(--line);
+  background:#000;
+}
+.recall-gallery img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+.recall-gallery figcaption{
+  position:absolute;
+  left:8px;
+  bottom:8px;
+  padding:5px 8px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(4,6,10,.78);
+  color:#dce4ee;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+@media(max-width:900px){
+  .recall-gallery{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .recall-wordmark{font-size:28px;letter-spacing:.14em}
+}
