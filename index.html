@@ -28,7 +28,7 @@
     <div class="hero-copy">
       <p class="eyebrow">AI CREATIVE PORTFOLIO</p>
       <h1>AIで、<br>アイデアを形にする。</h1>
-      <p class="lead">個人で制作しているゲーム「AIM//ERROR」を中心に、生成AIを使ったキャラクター映像、ループアニメーション、ゲーム内MV、UI素材、Webサービス、Suno AIを使ったゲーム内楽曲などを制作しています。生成して終わりではなく、実際に使える形まで調整・検証することを大切にしています。</p>
+      <p class="lead">生成AIで作ったSNS向けの縦型広告や、個人で制作しているゲーム「AIM//ERROR」を中心に、生成AIを使ったキャラクター映像、ループアニメーション、ゲーム内MV、UI素材、Webサービス、Suno AIを使ったゲーム内楽曲などを制作しています。生成して終わりではなく、実際に使える形まで調整・検証することを大切にしています。</p>
       <div class="hero-tags">
         <span>AI VIDEO</span><span>AI MUSIC</span><span>UI</span><span>WEB</span><span>UE5</span><span>QA / ITERATION</span>
       </div>
@@ -47,6 +47,35 @@
       <h2>生成AIを使った制作</h2>
       <p>映像・UI・キャラクター表現・音楽・Web制作など、実際に使うことを前提に試作と調整を行っています。</p>
     </div>
+
+    <article class="web-work ad-work">
+      <div class="web-work-copy">
+        <span class="work-kicker">AI VIDEO / AUTOMATION</span>
+        <h3>SNS向け縦型広告</h3>
+        <p class="web-sub">架空ブランド2本 / 15秒・9:16 / Claude Code × Higgsfield × After Effects</p>
+        <p>コスメ「MIZUKA」は雰囲気で、ワイヤレスイヤホン「KAZENE Air 1」は数字で見せる、という形で作り分けた15秒の縦型広告です。商品・人物・ロゴの基準画像をGPT Image 2.5とRecraft V4.1で作り、各カットの最初と最後のコマを決めてから、Kling 3.0で動画にしています。</p>
+        <p>画像と動画の生成、After Effectsでのテロップやロゴアニメの組み立ては、Claude Code（AIエージェント）に指示を出して進めました。After EffectsもMCPとスクリプトでClaude Codeから操作できるようにして、手作業の工程をできるだけ減らす作り方を試しています。</p>
+        <p>自分では、企画の方向性、採用・不採用の判断、0.25秒ごとの確認で見つけた違和感の指摘と、直し方の方向を決めました。書き出しはMIZUKAが21回、KAZENEが17回で、その都度見て直しています。</p>
+        <div class="web-tags">
+          <span>KLING 3.0</span><span>GPT IMAGE 2.5</span><span>RECRAFT V4.1</span><span>HIGGSFIELD</span><span>AFTER EFFECTS</span><span>CLAUDE CODE</span>
+        </div>
+        <a class="site-link ad-link" href="https://claude.ai/artifact/SJoaqWMpA74HhQi8PguVQi" target="_blank" rel="noopener">制作の流れと失敗の記録を見る →</a>
+      </div>
+      <div class="ad-stage">
+        <figure>
+          <video controls autoplay muted loop playsinline preload="metadata" poster="assets/ad-mizuka-poster.jpg">
+            <source src="assets/ad-mizuka.mp4" type="video/mp4">
+          </video>
+          <figcaption>MIZUKA / 世界観型</figcaption>
+        </figure>
+        <figure>
+          <video controls autoplay muted loop playsinline preload="metadata" poster="assets/ad-kazene-poster.jpg">
+            <source src="assets/ad-kazene.mp4" type="video/mp4">
+          </video>
+          <figcaption>KAZENE / スペック型</figcaption>
+        </figure>
+      </div>
+    </article>
 
     <div class="media-grid">
       <article class="media-card wide process-card">
@@ -258,7 +287,7 @@
       <div class="qa-card"><span>05</span><b>再検証</b><p>修正後に同じ条件で確認して詰める</p></div>
     </div>
     <div class="qa-examples">
-      <div><b>AI映像</b><p>顔・衣装の崩れ / 元画像との差 / 不要物 / 不自然な動き / ループ接続</p></div>
+      <div><b>AI映像</b><p>顔・衣装の崩れ / 商品の形のねじれ / 元画像との差 / 実在の看板などの写り込み / 不自然な動き / ループ接続</p></div>
       <div><b>ゲーム</b><p>ノーツ挙動 / 入力 / 判定 / UI / カメラ / スポーン / 再現性</p></div>
       <div><b>改善の進め方</b><p>問題を言語化 → 仮説 → 条件変更 → 比較 → 採用または再調整</p></div>
     </div>
@@ -270,6 +299,10 @@
       <h2>使用ツール</h2>
     </div>
     <div class="skills-grid">
+      <div class="skill"><strong>Kling / Wan / Seedance</strong><span>動画生成AI / 広告カット / 人物カットの試作</span></div>
+      <div class="skill"><strong>GPT Image / Recraft</strong><span>画像生成AI / 商品・人物の基準画像 / ベクターロゴ</span></div>
+      <div class="skill"><strong>Higgsfield</strong><span>動画・画像・3D生成モデルの実行環境</span></div>
+      <div class="skill"><strong>ComfyUI</strong><span>Stable Diffusion系の画像生成 / ワークフロー構築 / AI漫画の自動生成ワークフロー</span></div>
       <div class="skill"><strong>DomoAI / 生成AI</strong><span>AI動画 / キャラクター映像 / ループ / トランジション</span></div>
       <div class="skill"><strong>Suno AI</strong><span>ゲーム内楽曲 / AI音楽制作</span></div>
       <div class="skill"><strong>Unreal Engine 5</strong><span>ゲーム制作 / Blueprint / UI / 検証</span></div>
@@ -280,7 +313,7 @@
       <div class="skill"><strong>Adobe Photoshop</strong><span>画像編集 / フライヤー / グラフィック制作</span></div>
       <div class="skill"><strong>Live2D</strong><span>キャラクター制作で使用経験あり</span></div>
       <div class="skill"><strong>Illustration</strong><span>イラスト制作</span></div>
-      <div class="skill"><strong>AI Coding</strong><span>実装補助 / 不具合調査 / 試作・改善</span></div>
+      <div class="skill"><strong>Claude Code / AI Coding</strong><span>実装補助 / 生成・編集作業の自動化 / 不具合調査 / 試作・改善</span></div>
     </div>
   </section>
 

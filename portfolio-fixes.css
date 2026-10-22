@@ -520,3 +520,23 @@ section[id]{scroll-margin-top:84px}
 @media(max-width:560px){
   .recall-wordmark{font-size:28px;letter-spacing:.14em}
 }
+
+/* SNS向け縦型広告（2026-10 追加） */
+.web-work.ad-work{
+  margin:0 0 18px;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  align-items:center;
+}
+.ad-work .web-tags{margin-bottom:16px}
+.ad-stage{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.ad-stage figure{margin:0;min-width:0}
+.ad-stage video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;background:#000;border-radius:10px;border:1px solid var(--line)}
+.ad-stage figcaption{margin-top:7px;font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--muted)}
+@media(max-width:900px){
+  .web-work.ad-work{grid-template-columns:1fr;gap:18px}
+  .ad-stage{max-width:520px}
+}
+@media(max-width:560px){
+  .ad-stage{gap:8px;max-width:none}
+  .ad-link{white-space:normal;line-height:1.4;padding:8px 12px}
+}
