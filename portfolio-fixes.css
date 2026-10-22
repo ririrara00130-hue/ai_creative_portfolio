@@ -540,3 +540,32 @@ section[id]{scroll-margin-top:84px}
   .ad-stage{gap:8px;max-width:none}
   .ad-link{white-space:normal;line-height:1.4;padding:8px 12px}
 }
+
+/* Penclock（2026-10 追加） */
+.web-work.pc-work{
+  margin:0 0 18px;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  align-items:center;
+}
+.pc-panel{position:relative;z-index:2;padding:22px;border:1px solid var(--line);border-radius:12px;background:#080b11}
+.pc-mark{display:flex;align-items:center;gap:14px;padding-bottom:18px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.pc-mark b{font-size:clamp(26px,2.6vw,34px);letter-spacing:-.03em;line-height:1}
+.pc-mark small{margin-left:auto;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.pc-dial{position:relative;flex:0 0 46px;width:46px;height:46px;border-radius:50%;border:2px solid var(--cyan);box-shadow:0 0 18px rgba(57,230,255,.18)}
+.pc-dial i{position:absolute;left:50%;bottom:50%;width:2px;border-radius:2px;background:var(--pink);transform-origin:50% 100%}
+.pc-dial i:first-child{height:14px;margin-left:-1px;transform:rotate(-40deg)}
+.pc-dial i:last-child{height:18px;margin-left:-1px;background:#fff;transform:rotate(70deg)}
+.pc-roles{list-style:none;margin:0;padding:0}
+.pc-roles li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line);font-size:13px}
+.pc-roles li:last-child{border-bottom:0;padding-bottom:0}
+.pc-roles span{color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.12em}
+.pc-roles b{font-weight:700;color:#e9edf3}
+.pc-roles em{font-style:normal;font-size:10px;font-weight:800;letter-spacing:.08em;padding:4px 8px;border-radius:999px;border:1px solid rgba(255,59,167,.28);color:#ffd5eb;background:rgba(255,59,167,.06);white-space:nowrap}
+.pc-roles em.ai{border-color:rgba(57,230,255,.30);color:#dffaff;background:rgba(57,230,255,.06)}
+@media(max-width:900px){
+  .web-work.pc-work{grid-template-columns:1fr;gap:18px}
+}
+@media(max-width:560px){
+  .pc-panel{padding:16px}
+  .pc-roles li{font-size:12px;gap:8px}
+}
