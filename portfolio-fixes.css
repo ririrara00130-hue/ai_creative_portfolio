@@ -574,3 +574,15 @@ section[id]{scroll-margin-top:84px}
 .pc-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .pc-video-note{margin:9px 0 4px;color:var(--muted);font-size:11.5px;line-height:1.6}
 .pc-panel .pc-roles li{padding:9px 0;font-size:12.5px}
+
+/* 落ち着いた配色に変更（2026-10） */
+:root{--bg:#121212;--panel:#1a1a1a;--panel2:#202020;--text:#ededed;--muted:#a3a3a3;--pink:#e0a458;--cyan:#d9d9d9;--line:rgba(255,255,255,.12)}
+body{background:var(--bg)!important;font-family:"Noto Sans JP",sans-serif}
+.web-work,.media-card,.hero-showcase,.pc-panel{background:var(--panel)!important;border-color:var(--line)!important;box-shadow:none!important}
+.web-work:after{display:none}
+.web-tags span,.pc-roles em,.pc-roles em.ai{background:transparent!important;border-color:var(--line)!important;color:var(--text)!important}
+.site-link{background:transparent!important;border-color:var(--pink)!important;color:var(--pink)!important}
+.pc-dial{box-shadow:none}
+.hero h1,.section-head h2,.web-work-copy h3{letter-spacing:-.02em}
+.hero h1{font-size:clamp(34px,4.4vw,58px)!important;line-height:1.2}
+.web-sub{color:var(--pink)!important}
