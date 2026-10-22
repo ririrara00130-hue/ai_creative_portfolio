@@ -542,6 +542,7 @@ section[id]{scroll-margin-top:84px}
 }
 
 /* Penclock（2026-10 追加） */
+.pc-work .web-tags{margin-bottom:16px}
 .web-work.pc-work{
   margin:0 0 18px;
   grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
